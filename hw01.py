@@ -9,7 +9,7 @@ def total_salary(path):
             for line in file:
                 line = line.strip()
                 if not line:
-                    continue  # пропустити порожні рядки
+                    continue  # пропускаємо порожні рядки
                 try:
                     name, salary = line.split(',')
                     total += float(salary)
@@ -29,7 +29,7 @@ def total_salary(path):
         return (0, 0)
 
 # Приклад використання функції
-file_path = 'zp.txt'  # або вкажи повний шлях
+file_path = 'zp.txt'  # або можна вказати повний шлях, але він не буде працювати на GitHub
 total, average = total_salary(file_path)
 print(f"Загальна сума заробітної плати: {total}, Середня заробітна плата: {average}")
 

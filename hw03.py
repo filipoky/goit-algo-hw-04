@@ -2,7 +2,7 @@ import sys
 from pathlib import Path
 from colorama import init, Fore, Style
 
-# Ініціалізація colorama для Windows
+# Ініціалізація colorama 
 init(autoreset=True)
 
 def print_directory_structure(path: Path, indent: str = ""):
